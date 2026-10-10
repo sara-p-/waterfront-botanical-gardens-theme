@@ -208,7 +208,8 @@
   },
   "styles": {
     "color": {
-      "text": "var(--wp--preset--color--dark-green)"
+      "text": "var(--wp--preset--color--dark-green)",
+      "background": "var(--wp--preset--color--cream)"
     },
     "elements": {
       "button": {
