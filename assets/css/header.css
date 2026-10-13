@@ -1,0 +1,61 @@
+/* General Header */
+header {
+  nav[aria-label='Main Nav'] a.wp-block-navigation-item__content {
+    &:hover,
+    &:focus {
+      color: var(--wp--preset--color--light-green);
+    }
+  }
+}
+
+/* Search Bar */
+header .wp-block-search.wp-block-search__button-only .wp-block-search__button {
+  padding: 0;
+  background: transparent;
+  align-items: center;
+  & svg.search-icon {
+    fill: var(--wp--preset--color--dark-green);
+    height: 34px;
+    min-height: 34px;
+    min-width: 34px;
+  }
+
+  &:hover,
+  &:focus {
+    & svg.search-icon {
+      fill: var(--wp--preset--color--light-green);
+    }
+  }
+}
+
+/* Utility Nav Icons */
+header a.utility-nav__link {
+  display: flex;
+  align-items: center;
+  svg {
+    fill: var(--wp--preset--color--dark-green);
+  }
+  &:hover,
+  &:focus {
+    svg {
+      fill: var(--wp--preset--color--light-green);
+    }
+  }
+}
+
+/* Styling of everything when the mega-menu is open */
+header:has(
+    button.wp-block-ollie-mega-menu__toggle.wp-block-navigation-item__content[aria-expanded='true']
+  ) {
+  /* Main Menu links */
+  nav[aria-label='Main Nav'] a {
+    color: var(--wp--preset--color--light-green);
+  }
+  /* Utility Nav SVGs and Search Icon */
+  a.utility-nav__link svg,
+  .wp-block-search.wp-block-search__button-only
+    .wp-block-search__button
+    svg.search-icon {
+    fill: var(--wp--preset--color--light-green);
+  }
+}
