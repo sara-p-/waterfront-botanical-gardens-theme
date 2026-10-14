@@ -1,50 +1,17 @@
 /* Mega Menu */
 header
   .header-container:has(
-    .wp-block-ollie-mega-menu
-      button.wp-block-ollie-mega-menu__toggle[aria-expanded='true']
+    .wbg-mega-menu button.wbg-mega-menu__toggle[aria-expanded='true']
   ) {
   background-color: var(--wp--preset--color--dark-green) !important;
 }
 
-.mega-menu-trigger {
-  position: relative;
-  width: 165px;
-}
-
-/* "MENU" button in the header */
-.wp-block-ollie-mega-menu button.wp-block-ollie-mega-menu__toggle {
-  position: absolute;
-  left: 0;
-  top: -34px;
-  display: flex;
-  padding: 70px 38px;
-  background: var(--wp--preset--color--light-green);
-  border-radius: 50%;
-  transition: all 350ms ease-in-out;
-  border: 1px solid transparent;
-  z-index: 1000;
-  border: 1px solid var(--wp--preset--color--cream);
-  &:hover,
-  &:focus {
-    background: var(--wp--preset--color--med-green);
-    color: var(--wp--preset--color--light-green);
-  }
-  /* Little icon */
-  & .wp-block-ollie-mega-menu__toggle-icon {
-    display: none;
-  }
-
-  /* Color when the button is toggled open */
-  &[aria-expanded='true'] {
-    background-color: var(--wp--preset--color--light-green);
-    color: var(--wp--preset--color--dark-green);
-    /* &:hover,
-    &:focus {
-      background: var(--wp--preset--color--med-green);
-      color: var(--wp--preset--color--light-green);
-    } */
-  }
+.wbg-mega-menu
+  .wp-block-navigation
+  .has-child
+  .wp-block-navigation__submenu-container {
+  box-shadow: none;
+  border: none;
 }
 
 .wbg-mega-menu
@@ -56,7 +23,9 @@ header
   font-size: clamp(1.13rem, calc(1.057rem + 0.341vw), 1.31rem);
   padding: 0.5rem;
   padding-left: clamp(0rem, calc(-5.825rem + 11.933vw), 3.125rem);
-  font-family: var(--wp--preset--font-family--gotham);
+  font-family: var(--wp--preset--font-family--inter);
+  letter-spacing: -0.231px;
+  font-style: normal;
 }
 
 /* Parent Nav Item in the Mega Menu */
@@ -71,12 +40,12 @@ header
   }
 }
 
-/* .wbg-mega-menu
+.wbg-mega-menu
   nav
   ul:not(.wp-block-navigation__submenu-container)
-  li.wp-block-navigation-item {
-  letter-spacing: -2.892px;
-} */
+  > li.wp-block-navigation-item {
+  /* letter-spacing: -2.892px; */
+}
 
 /* Child submenu in the mega menu */
 .wbg-mega-menu nav {
