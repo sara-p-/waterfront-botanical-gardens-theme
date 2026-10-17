@@ -1,4 +1,6 @@
-/* General Header */
+/*---------------- General Header --------------*/
+
+/* Header links hover/focus color */
 header {
   nav[aria-label='Main Nav'] a.wp-block-navigation-item__content {
     &:hover,
@@ -43,19 +45,31 @@ header a.utility-nav__link {
   }
 }
 
-/* Styling of everything when the mega-menu is open */
-header:has(
-    button.wp-block-ollie-mega-menu__toggle.wp-block-navigation-item__content[aria-expanded='true']
+/*---------------- Mega Menu Toggle States --------------*/
+/* Header toggle state background */
+header
+  .header-container:has(
+    .wbg-mega-menu button.wbg-mega-menu__toggle[aria-expanded='true']
   ) {
-  /* Main Menu links */
-  nav[aria-label='Main Nav'] a {
+  background-color: var(--wp--preset--color--dark-green) !important;
+
+  & nav[aria-label='Main Nav'] a.wp-block-navigation-item__content {
     color: var(--wp--preset--color--light-green);
+    &:hover,
+    &:focus {
+      color: var(--wp--preset--color--cream);
+    }
   }
-  /* Utility Nav SVGs and Search Icon */
-  a.utility-nav__link svg,
-  .wp-block-search.wp-block-search__button-only
+
+  & a.utility-nav__link > svg,
+  &
+    .wp-block-search.wp-block-search__button-only
     .wp-block-search__button
-    svg.search-icon {
+    > svg.search-icon {
     fill: var(--wp--preset--color--light-green);
+    &:hover,
+    &:focus {
+      fill: var(--wp--preset--color--cream);
+    }
   }
 }

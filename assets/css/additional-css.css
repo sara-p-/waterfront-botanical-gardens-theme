@@ -1,5 +1,11 @@
-/* Header */
+/* The styling here is not enqueued by the theme, but is copy/pasted
+  into the "Additional CCS" section in the editor. 
+  This was done so that the "header-height" can be changed directly
+  in the Editor rather than the theme files.
+  I added this file to the theme so that I could track it with Git.
+*/
 
+/* Fixed Header */
 header {
   position: fixed;
   top: 0;
