@@ -73,3 +73,46 @@ header
     }
   }
 }
+
+/*---------------- Header Logos --------------*/
+/* Mobile logos - hide on desktop, unless it's in the editor (where it should show) */
+body:not(.wp-admin, .editor-styles-wrapper) {
+  .logo__mobile,
+  .logo__mobile-green {
+    display: none;
+  }
+}
+
+body .logo {
+  display: block;
+}
+
+/*---------------- Media Queries --------------*/
+@media screen and (max-width: 960px) {
+  header nav[aria-label='Main Nav'] {
+    display: none;
+  }
+
+  header a.utility-nav__link {
+    width: 18px;
+  }
+
+  header
+    .wp-block-search.wp-block-search__button-only
+    .wp-block-search__button
+    > svg.search-icon {
+    min-width: 24px;
+  }
+
+  body:not(.wp-admin, .editor-styles-wrapper) {
+    .logo__mobile {
+      display: block;
+      width: 115px;
+      margin: 0;
+    }
+  }
+
+  body .logo {
+    display: none;
+  }
+}
