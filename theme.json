@@ -92,6 +92,11 @@
           "name": "160",
           "size": "clamp(3.125rem, calc(-1.536rem + 15.537vw), 10rem)",
           "slug": "160"
+        },
+        {
+          "name": "288",
+          "size": "clamp(5rem, calc(-3.667rem + 28.889vw), 18rem)",
+          "slug": "288"
         }
       ],
       "units": ["px", "rem", "em", "%", "vw", "vh"]
@@ -284,7 +289,7 @@
         "typography": {
           "fontSize": "var(--wp--preset--font-size--heading-two)",
           "letterSpacing": "0px",
-          "lineHeight": "0.36"
+          "lineHeight": "1.2"
         }
       },
       "h3": {
@@ -308,7 +313,7 @@
           "fontSize": "var(--wp--preset--font-size--heading-five)",
           "fontStyle": "normal",
           "fontWeight": "350",
-          "lineHeight": "1.76"
+          "lineHeight": "clamp(25px, calc(12.333px + 2.639vw), 44px)"
         }
       },
       "h6": {

@@ -9,6 +9,23 @@ p {
   margin: 0;
 }
 /* Fake Headings */
+.fake--h1 {
+  font-size: var(--wp--preset--font-size--heading-one);
+  font-family: var(--wp--preset--font-family--dm-serif-display);
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+.fake--h2 {
+  font-size: var(--wp--preset--font-size--heading-two);
+  font-family: var(--wp--preset--font-family--dm-serif-display);
+  line-height: 1;
+  letter-spacing: 0px;
+  line-height: 1.2;
+  text-transform: none;
+}
+
 .fake--h6 {
   font-size: var(--wp--preset--font-size--heading-six);
   font-family: var(--wp--preset--font-family--gotham);
@@ -16,12 +33,4 @@ p {
   line-height: 1;
   text-transform: uppercase;
   font-weight: 400;
-}
-
-.fake--h1 {
-  font-size: var(--wp--preset--font-size--heading-one);
-  font-family: var(--wp--preset--font-family--dm-serif-display);
-  line-height: 1;
-  letter-spacing: normal;
-  text-transform: none;
 }
