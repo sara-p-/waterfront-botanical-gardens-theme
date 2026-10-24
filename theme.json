@@ -21,18 +21,13 @@
         },
         {
           "color": "#6d7637",
-          "name": "Med Green",
-          "slug": "med-green"
+          "name": "Green",
+          "slug": "green"
         },
         {
           "color": "#464b34",
           "name": "Dark Green",
           "slug": "dark-green"
-        },
-        {
-          "color": "#3a4740",
-          "name": "Darker Green",
-          "slug": "darker-green"
         },
         {
           "color": "#c9e8ff",
@@ -245,11 +240,28 @@
       "text": "var(--wp--preset--color--dark-green)"
     },
     "css": "/* Header */\n\nheader {\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100%;\n}\n\nmain .entry-content {\n  margin-top: 112px;\n}\n\n.admin-bar {\n  header {\n    top: 32px;\n  }\n}\n",
+    "blocks": {
+      "core/button": {
+        "variations": {
+          "outline": {
+            "color": {
+              "background": "transparent",
+              "text": "var(--wp--preset--color--dark-green)"
+            },
+            "border": {
+              "color": "var(--wp--preset--color--dark-green)",
+              "background": "var(--wp--preset--color--cream)",
+              "width": "1px"
+            }
+          }
+        }
+      }
+    },
     "elements": {
       "button": {
         "color": {
           "background": "var(--wp--preset--color--light-green)",
-          "text": "var(--wp--preset--color--darker-green)"
+          "text": "var(--wp--preset--color--dark-green)"
         },
         "typography": {
           "fontFamily": "var(--wp--preset--font-family--gotham)",
@@ -258,6 +270,11 @@
           "fontWeight": "400",
           "letterSpacing": "0.36px",
           "lineHeight": "1"
+        },
+        "border": {
+          "color": "var(--wp--preset--color--light-green)",
+          "width": "1px",
+          "radius": "30px"
         },
         "spacing": {
           "padding": {
@@ -269,14 +286,20 @@
         },
         ":hover": {
           "color": {
-            "background": "var(--wp--preset--color--darker-green)",
+            "background": "var(--wp--preset--color--dark-green)",
             "text": "var(--wp--preset--color--light-green)"
+          },
+          "border": {
+            "color": "var(--wp--preset--color--dark-green)"
           }
         },
         ":focus": {
           "color": {
-            "background": "var(--wp--preset--color--darker-green)",
+            "background": "var(--wp--preset--color--dark-green)",
             "text": "var(--wp--preset--color--light-green)"
+          },
+          "border": {
+            "color": "var(--wp--preset--color--dark-green)"
           }
         }
       },

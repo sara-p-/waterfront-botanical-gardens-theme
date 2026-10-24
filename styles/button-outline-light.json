@@ -1,0 +1,17 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "title": "Outline Light",
+  "slug": "outline-light",
+  "blockTypes": ["core/button"],
+  "styles": {
+    "color": {
+      "background": "transparent",
+      "text": "var(--wp--preset--color--cream)"
+    },
+    "border": {
+      "color": "var(--wp--preset--color--cream)"
+    },
+    "css": "&:hover, &:focus { background-color: var(--wp--preset--color--dark-green); color: var(--wp--preset--color--cream), border: var(--wp--preset--color--cream); }"
+  }
+}
