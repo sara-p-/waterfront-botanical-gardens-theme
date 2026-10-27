@@ -1,4 +1,7 @@
 /*---------------- General Header --------------*/
+header {
+  z-index: 99;
+}
 
 /* Header links hover/focus color */
 header {

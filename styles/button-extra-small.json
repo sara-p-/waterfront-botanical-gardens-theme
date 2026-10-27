@@ -1,0 +1,17 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "title": "Extra Small Size",
+  "slug": "extra-small-size",
+  "blockTypes": ["core/button"],
+  "styles": {
+    "spacing": {
+      "padding": {
+        "top": "0.5rem",
+        "bottom": "0.5rem",
+        "left": "var(--wp--preset--spacing--16)",
+        "right": "var(--wp--preset--spacing--16)"
+      }
+    }
+  }
+}
