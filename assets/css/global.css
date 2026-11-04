@@ -31,6 +31,12 @@ p {
   text-transform: none;
 }
 
+.fake--h5 {
+  font-size: var(--wp--preset--font-size--heading-five);
+  font-family: var(--wp--preset--font-family--gotham);
+  font-weight: 350;
+}
+
 .fake--h6 {
   font-size: var(--wp--preset--font-size--heading-six);
   font-family: var(--wp--preset--font-family--gotham);
@@ -47,4 +53,10 @@ p {
   background-color: var(--wp--preset--color--dark-green);
   color: var(--wp--preset--color--cream);
   border: 1px solid var(--wp--preset--color--cream);
+}
+
+.wp-block-button__link {
+  transition:
+    background 350ms ease-in-out,
+    color 350ms ease-in-out;
 }

@@ -18,6 +18,7 @@ header .wp-block-search.wp-block-search__button-only .wp-block-search__button {
   padding: 0;
   background: transparent;
   align-items: center;
+  border: none;
   & svg.search-icon {
     fill: var(--wp--preset--color--dark-green);
     height: 34px;
@@ -90,6 +91,24 @@ body .logo {
   display: block;
 }
 
+body .logo--light {
+  display: none;
+  margin: 0;
+}
+
+/* Show certain logos depending on the toggle state of the mega menu */
+header
+  .header-container:has(
+    .wbg-mega-menu button.wbg-mega-menu__toggle[aria-expanded='true']
+  ) {
+  .logo {
+    display: none;
+  }
+  .logo--light {
+    display: block;
+  }
+}
+
 /*---------------- Media Queries --------------*/
 @media screen and (max-width: 960px) {
   header nav[aria-label='Main Nav'] {
@@ -115,7 +134,8 @@ body .logo {
     }
   }
 
-  body .logo {
+  body .logo,
+  body .logo--light {
     display: none;
   }
 }

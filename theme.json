@@ -2,6 +2,11 @@
   "$schema": "https://schemas.wp.org/wp/7.1/theme.json",
   "version": 3,
   "settings": {
+    "custom": {
+      "layout": {
+        "extra-wide": "1345px"
+      }
+    },
     "appearanceTools": true,
     "color": {
       "custom": true,
@@ -380,6 +385,7 @@
       "lineHeight": "1.75"
     }
   },
+
   "templateParts": [
     {
       "area": "header",
