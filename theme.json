@@ -40,7 +40,7 @@
           "slug": "light-blue"
         },
         {
-          "color": "#CD0C5C",
+          "color": "#8A1847",
           "name": "Pink",
           "slug": "pink"
         }
@@ -97,6 +97,11 @@
           "name": "288",
           "size": "clamp(5rem, calc(-3.667rem + 28.889vw), 18rem)",
           "slug": "288"
+        },
+        {
+          "name": "450",
+          "size": "clamp(7.5rem, calc(-6.25rem + 45.833vw), 28.125rem)",
+          "slug": "450"
         }
       ],
       "units": ["px", "rem", "em", "%", "vw", "vh"]
