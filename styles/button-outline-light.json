@@ -9,9 +9,6 @@
       "background": "transparent",
       "text": "var(--wp--preset--color--cream)"
     },
-    "border": {
-      "color": "var(--wp--preset--color--cream)"
-    },
-    "css": "&:hover, &:focus { background-color: var(--wp--preset--color--dark-green); color: var(--wp--preset--color--cream), border: var(--wp--preset--color--cream); }"
+    "css": "{border: 1px solid var(--wp--preset--color--cream); &:hover, &:focus { background-color: var(--wp--preset--color--dark-green); color: var(--wp--preset--color--cream), border: var(--wp--preset--color--cream); }}"
   }
 }
